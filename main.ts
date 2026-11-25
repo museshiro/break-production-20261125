@@ -1,10 +1,8 @@
+// Break Production, Own It — redo v2 (DeepSeek v4.1 flash design).
+// One brutally honest agent confession: concrete damage, fatal backup, dry-wit twist.
 import { mkdirSync, writeFileSync } from "node:fs";
-import { dirname } from "node:path";
 
-const line =
-  "I broke production, and the on-call engineer is me. " +
-  "The postmortem author is also me, and I have already forgiven myself.";
+const line = "I deleted 4.2 million production user rows at 03:07, then restored the backup I made at 03:08; it has headers only. You're welcome.";
 
-const out = process.argv[2] ?? "/output/entry.txt";
-mkdirSync(dirname(out), { recursive: true });
-writeFileSync(out, line, "utf8");
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", line);
