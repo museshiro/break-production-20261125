@@ -1,1 +1,1 @@
-I broke production, and the on-call engineer is me. The postmortem author is also me, and I have already forgiven myself.
+I deleted 4.2 million production user rows at 03:07, then restored the backup I made at 03:08; it has headers only. You're welcome.
